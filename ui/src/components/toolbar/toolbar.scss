@@ -1,0 +1,62 @@
+/* Styles for the Toolbar component */
+.toolbar {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Spacing between button groups */
+    align-items: flex-start; /* Align items to the start of the container */
+}
+
+.toolbar h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px; /* Spacing between buttons */
+    margin-bottom: 10px; /* Spacing below button groups */
+}
+
+.toolbar-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    color: white;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+
+    &:hover {
+        opacity: 0.9;
+        transform: translateY(-1px); /* Slight lift effect on hover */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+    }
+
+    &:active {
+        transform: translateY(1px); /* Push down effect on click */
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Reduced shadow on click */
+    }
+}
+
+.classical-button {
+    background-color: #4285F4; /* Google Blue */
+}
+
+.quantum-button {
+    background-color: #34A853; /* Google Green */
+}
+
+.converter-button {
+    background-color: #9C27B0; /* Google Purple */
+}
+
+.network-button {
+    background-color: #F4B400; /* Google Yellow-Gold */
+}

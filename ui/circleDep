@@ -1,0 +1,63 @@
+{
+	"src/components/node/base/baseNode.ts": [
+		[
+			"src/components/node/base/baseNode.ts",
+			"src/components/node/connections/connectionManager.ts",
+			"src/helpers/errors/connectionError.ts"
+		],
+		[
+			"src/components/node/base/baseNode.ts",
+			"src/components/node/connections/connectionManager.ts"
+		]
+	],
+	"src/components/canvas/utils.ts": [
+		[
+			"src/components/canvas/utils.ts",
+			"src/components/node/base/baseNode.ts",
+			"src/components/node/base/quantum/quantumHost.ts",
+			"src/components/node/nodeManager.ts"
+		],
+		[
+			"src/components/canvas/utils.ts",
+			"src/components/node/base/baseNode.ts",
+			"src/components/node/base/quantum/quantumRepeater.ts",
+			"src/components/node/nodeManager.ts"
+		],
+		[
+			"src/components/canvas/utils.ts",
+			"src/components/node/base/baseNode.ts",
+			"src/components/node/classical/classicalHost.ts",
+			"src/components/node/nodeManager.ts"
+		],
+		[
+			"src/components/canvas/utils.ts",
+			"src/components/node/base/baseNode.ts",
+			"src/components/node/classical/classicalRouter.ts",
+			"src/components/node/nodeManager.ts"
+		],
+		[
+			"src/components/canvas/utils.ts",
+			"src/components/node/base/baseNode.ts",
+			"src/components/node/classical/internetExchange.ts",
+			"src/components/node/nodeManager.ts"
+		],
+		[
+			"src/components/canvas/utils.ts",
+			"src/components/node/base/baseNode.ts",
+			"src/components/node/converters/classicToQuantumConverter copy.ts",
+			"src/components/node/nodeManager.ts"
+		],
+		[
+			"src/components/canvas/utils.ts",
+			"src/components/node/base/baseNode.ts",
+			"src/components/node/converters/quantumToClassicConverter.ts",
+			"src/components/node/nodeManager.ts"
+		],
+		[
+			"src/components/canvas/utils.ts",
+			"src/components/node/base/baseNode.ts",
+			"src/components/node/nodeManager.ts",
+			"src/components/node/wrappers/zone.ts"
+		]
+	]
+}

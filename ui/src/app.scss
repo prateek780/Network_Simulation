@@ -1,0 +1,17 @@
+/* Global styles for the App component */
+.App {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Stretch items to fill container width */
+    height: 100vh; /* Make App take full viewport height */
+    width: 100vw; /* Make App take full viewport width */
+}
+
+.App > *:not(:last-child) { /* Apply margin to all direct children except the last one */
+  margin-bottom: 10px;
+}
+
+h1 {
+  text-align: center;
+}
