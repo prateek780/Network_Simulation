@@ -189,7 +189,51 @@ Generate a JSON response that EXACTLY follows this structure:
       "Quantum Error Rate": "0.00%",
       "Total Qubit Operations": 16,
       "QKD Phases Completed": 4
-    }}
+    }},
+    "Significant Events": [
+      {{
+        "log_id": "LOG_0011",
+        "event": "Message Transmission Initiated",
+        "component": "ClassicalHost-9",
+        "description": "ClassicalHost-9 sent data 'Hi prateek nice to meet you' to ClassicalHost-7"
+      }},
+      {{
+        "log_id": "LOG_0016",
+        "event": "Classical-Quantum Interface",
+        "component": "QC_Router_QuantumAdapter-13",
+        "description": "QC_Router_QuantumAdapter-13 received packet from ClassicalHost-9"
+      }},
+      {{
+        "log_id": "LOG_0018",
+        "event": "QKD Initiation",
+        "component": "QuantumAdapter-13",
+        "description": "QuantumAdapter-13 initiating QKD with QuantumAdapter-11"
+      }},
+      {{
+        "log_id": "LOG_0019",
+        "event": "Quantum Key Distribution",
+        "component": "QuantumHost-8",
+        "description": "QuantumHost-8 initiating quantum key distribution"
+      }},
+      {{
+        "log_id": "LOG_0089",
+        "event": "Message Encryption",
+        "component": "QuantumAdapter-13",
+        "description": "QuantumAdapter-13 encrypted the message using quantum key"
+      }},
+      {{
+        "log_id": "LOG_0100",
+        "event": "Message Decryption",
+        "component": "QuantumAdapter-11",
+        "description": "QuantumAdapter-11 decrypted the message using quantum key"
+      }},
+      {{
+        "log_id": "LOG_0111",
+        "event": "Message Delivery",
+        "component": "ClassicalHost-7",
+        "description": "ClassicalHost-7 received the original message"
+      }}
+    ]
   }},
   "ENCRYPTION": {{
     "Algorithm": "simple_xor",
@@ -208,6 +252,7 @@ Make sure to extract:
 4. The detailed message flow with ALL nodes in the correct sequence
 5. Log IDs for each significant event in the DETAILED_SUMMARY
 6. All bandwidth, encryption, and quantum metrics exactly as they appear in the logs
+7. EXACTLY 7 significant events that cover the main stages of the message flow including: message transmission, classical-quantum interface, QKD initiation, quantum key distribution, message encryption, message decryption, and final message delivery
 
 IMPORTANT - EXTRACT NETWORK PERFORMANCE METRICS:
 For "Network Performance", you MUST carefully extract these metrics from the logs:
