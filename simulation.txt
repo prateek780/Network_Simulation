@@ -1,0 +1,98 @@
+{
+  "SHORT SUMMARY": "ClassicalHost-9 sent 'hi prateek nice to meet you' to ClassicalHost-7 through a quantum-classical network with 8 nodes, involving 3 classical hops and 1 quantum hop, using simple_xor encryption and BB84 key generation.",
+  "DETAILED SUMMARY": "The simulation started with ClassicalHost-9 sending a message to ClassicalHost-7 ([LOG_0011]). 
+  The message was routed through ClassicalRouter-14 ([LOG_0013]) and then to QC_Router_QuantumAdapter-13 ([LOG_0016]).
+  QuantumAdapter-13 initiated QKD with QuantumAdapter-11 ([LOG_0018]) and encrypted the message ([LOG_0090]).
+  The encrypted message was forwarded to QC_Router_QuantumAdapter-11 ([LOG_0091]) and then to ClassicalHost-7 ([LOG_0098]).
+  The message was successfully received at ClassicalHost-7 ([LOG_0099]).",
+  "MESSAGE FLOW": "ClassicalHost-9 -> ClassicalRouter-14 -> QC_Router_QuantumAdapter-13 -> QuantumAdapter-13 -> QuantumHost-8 -> QuantumAdapter-11 -> QC_Router_QuantumAdapter-11 -> ClassicalRouter-10 -> ClassicalHost-7",
+  "MESSAGE DELIVERY": {
+    "Status": "delivered",
+    "Receipt Log ID": "LOG_0099",
+    "Receipt Content": "QuantumAdapter-11 received packet from QC_Router_QuantumAdapter-13"
+  },
+  "SIMULATION STATUS": "success",
+  "DETAILS": {
+    "Communication Status": "success",
+    "Quantum Operations": "success",
+    "Node Count": 8,
+    "Hop Count": {
+      "classical": 3,
+      "quantum": 1
+    },
+    "Network Performance": {
+      "Quantum Bandwidth": "16 qubits",
+      "Classical Bandwidth": "216 bytes",
+      "QKD Key Length": "7 bits",
+      "Quantum Error Rate": "0.0%",
+      "Total Qubit Operations": 16,
+      "QKD Phases Completed": 4
+    }
+  },
+  "ENCRYPTION": {
+    "Algorithm": "simple_xor",
+    "Key Generation": "BB84",
+    "Original Message": "hi prateek nice to meet you",
+    "Encrypted Form": "bytearray(b'@i(xritmec(nacm |g eemt(qo}')"
+  },
+  "SIGNIFICANT EVENTS": [
+    {
+      "log_id": "SUMMARY_EVENT_0",
+      "event": "NETWORK INITIALIZATION: Hybrid quantum-classical network initialized with classical hosts, routers, quantum hosts, and adapters",
+      "component": "Network"
+    },
+    {
+      "log_id": "LOG_0101",
+      "event": "SECURE KEY ESTABLISHED [LOG_0101]: QuantumHost-12 completed quantum key distribution protocol",
+      "component": "QuantumHost-12"
+    },
+    {
+      "log_id": "LOG_0011",
+      "event": "INITIAL MESSAGE TRANSMISSION [LOG_0011]: ClassicalHost-9 sent message 'Hi prateek nice to meet you' to meet you'",
+      "component": "ClassicalHost-9"
+    },
+    {
+      "log_id": "LOG_0018",
+      "event": "QUANTUM KEY DISTRIBUTION [LOG_0018]: QuantumAdapter-13 initiated secure quantum key exchange with QuantumAdapter-11",
+      "component": "QuantumAdapter-13"
+    },
+    {
+      "log_id": "LOG_0022",
+      "event": "QUANTUM TRANSMISSION [LOG_0022]: Quantum bit transmitted from QuantumHost-8 to QuantumHost-12",
+      "component": "Quantum Channel"
+    },
+    {
+      "log_id": "LOG_0090",
+      "event": "MESSAGE ENCRYPTION [LOG_0090]: QuantumAdapter-13 encrypted 'Hi prateek nice to meet you' using quantum-generated key",
+      "component": "QuantumAdapter-13"
+    },
+    {
+      "log_id": "LOG_0108",
+      "event": "MESSAGE DECRYPTION [LOG_0108]: QuantumAdapter-11 decrypted data back to ')'",
+      "component": "QuantumAdapter-11"
+    },
+    {
+      "log_id": "LOG_0118",
+      "event": "FINAL MESSAGE DELIVERY [LOG_0118]: ClassicalHost-7 successfully received message: 'Hi prateek nice to meet you'",
+      "component": "ClassicalHost-7"
+    }
+  ],
+  "REFERENCES": [
+    {
+      "log_id": "LOG_0011",
+      "content": "ClassicalHost-9 sent data 'Hi prateek nice to meet you' to ClassicalHost-7"
+    },
+    {
+      "log_id": "LOG_0018",
+      "content": "QuantumAdapter-13 initiating QKD with QuantumAdapter-11"
+    },
+    {
+      "log_id": "LOG_0090",
+      "content": "QuantumAdapter-13 encrypted data 'Hi prateek nice to meet you' to 'bytearray(b'@i(xritmec(nacm |g eemt(qo}')'"
+    },
+    {
+      "log_id": "LOG_0099",
+      "content": "QuantumAdapter-11 received packet from QC_Router_QuantumAdapter-13"
+    }
+  ]
+}
